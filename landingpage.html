@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .topheader{
+            display: flex;
+            margin-left: 200px;
+            gap: 500px;
+        }
+        .centerhead{
+            line-height: 20px;
+            background-image: url(build.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            margin-top: 0;
+            padding-top: 150px;
+            padding-left: 100px;
+            display: flex;
+        }
+        /* .centerhead h1{
+            padding-top: 150px;
+            padding-left: 100px;
+        } */
+        .centerhead .first{
+            font-weight:100;
+            text-align: center;
+            padding-top: 150px;
+            padding-left: 100px;
+        }
+        .centerhead .second{
+            text-align: center;
+            padding-left: 100px;
+        }
+        .centerhead p{
+            padding-top: 10px;
+            padding-left: 100px;
+        }
+        .centerhead ul{
+            padding-left: 130px;
+            list-style-type:circle;
+        }
+        .personimg{
+            /* padding-left: 200px; */
+            /* margin-bottom: 0; */
+            background-color: aliceblue;
+          height: 450px;
+          margin-left: 160px;
+            /* width: 200px; */
+            /* background-color: aliceblue;
+            margin-left: 100px;
+            width: 80px;
+            height: 450px; */
+        }
+      
+        .imagecap{
+            /* background-color: aliceblue; */
+            /* padding-top: 0; */
+            /* line-height:2px; */
+            /* height: 130px; */
+            padding-top: 15px;
+            /* padding-left: 10px; */
+            text-align: center;
+            line-height: 3px;
+            /* margin-top: 0; */
+        }
+        .imagecap h5{
+            color: dimgray;
+        }
+        .imagecap button{
+            color: aliceblue;
+            background-color: green;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 30px;
+        }
+        .greenish{
+            width: 900;
+            height: 140px;
+            color: aliceblue;
+            background-color: darkgreen;
+            display: flex;
+            padding-left: 300px;
+            padding-top: 30px;
+            gap: 100px;
+            line-height: 10px;
+        }
+        .strength{
+            text-align: center;
+            margin-top: 50px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 2px;
+        }
+        .strength p{
+            color: rgb(75, 75, 75);
+        }
+        .proposition{
+            display: flex;
+            margin-left: 120px;
+            margin-right: 150px;
+            gap: 60px;
+           margin-top: 80px;
+        }
+        .propic{
+            background-image: url(buildingimage1.jpg);
+            background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* filter: brightness(20%); */
+            color: aliceblue;
+            width: 300px;
+            height: 200px;
+          
+        }
+        .propicsec{
+            background-image: url(buildingimage1.jpg);
+            /* background-size: cover; */
+            width: 310px;
+            background-blend-mode: multiply;
+            background-color: rgba(3, 94, 3, 0.7);
+            color: aliceblue;
+        }
+       .hello{
+        display: flex;
+        margin-left: 380px;
+       }
+       .horiline{
+        margin-top: 8px;
+       }
+       .propic p,.propicsec p{
+        padding-left: 50px;
+       }
+       .target img{
+        margin: 40px 20px 20px 60px;
+        width: 400px;
+        height: 230px;
+       }
+       .maintarget{
+        display: flex;
+        gap: 40px;
+        margin-left: 60px;
+       }
+       .lineprice{
+        display: flex;
+       }
+       .sectarget{
+        margin-top: 45px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* line-height: 20px; */
+       }
+       .price{
+        line-height: 10px;
+        padding-left: 10px;
+       }
+       .customer{
+        background-image: url(buildingimagecust4.jpg);
+        background-repeat: no-repeat;
+        height: 220px;
+        color: aliceblue;text-align: center;
+        padding-top: 30px;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.7);    
+        line-height: 20px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       .customer button{
+        background-color: darkgreen;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: none;
+        color: aliceblue;
+        border-radius: 3px;
+       }
+       #heading{
+        font-weight: 100;
+       }
+       .square{
+        display: flex;
+        gap: 10px;
+       }
+       .buildingpic img{
+        width: 200px;
+       }
+       .buildingpic p{
+        font-size: 13px;
+        color: dimgray;
+       }
+       .buildingpic{
+        /* box-shadow: 1px 1px 1px  dimgray; */
+        width: 220px;
+        /* background-color:aliceblue; */
+        padding-left: 15px;
+       }
+       .buildingpic:hover{
+        box-shadow: 1px 1px 3px 2px dimgray;
+       }
+       .builddetails{
+        margin-top: 50px;
+        margin-left: 160px;
+        width: 900px;
+        display: flex;
+        justify-content: space-evenly;
+       }
+      .about{
+        display: flex;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 300px;
+        gap: 30px;
+      }
+       .about img{
+        width: 100px;
+        height: 100px;
+       }
+       .jerry p{
+        font-size: 14px;
+        line-height: 20px;
+        color: dimgray;
+       }
+       .jerry{
+        margin-top: 10px;
+        width: 220px;
+        transition: width 2s,height 2s,transform 2s;
+        padding-top: 40px;
+       }
+      .jerrycenter img{
+        width:220px;
+        height: 180px;
+      }
+      .jerrycenter{
+        font-size: 14px;
+        width: 220px;
+        background-color: darkgreen;
+        color: aliceblue;
+      }
+      .future{
+        background-image: url(buildingimagecust4.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.7);   
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 200px;
+        color: aliceblue;
+        padding-top: 50px;
+        text-align: center;
+        line-height: 15px;
+        margin-top: 30px;
+      }
+      #futurehead{
+        font-weight:100;
+      }
+      .future button{
+        background-color: darkgreen;
+        color: aliceblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        margin-top: 20px;
+      }
+    </style>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="topheader">
+            <h4><i class="fa-solid fa-square-rss"></i>Simple LOGO</h4>
+            <h4><i class="fa-solid fa-phone"></i>Call Now: <b>1-800
+                    239-5678</b></h4>
+        </div>
+        <div class="centerhead">
+            <div>
+                <h1><span class="first">Clear Value For Your</span></h1>
+                <h1><span class="second">Target Customer</span></h1>
+                <p>A supporting statement for your Value Propostion to
+                    <br>encourage customer to complete your CTA</p>
+                <ul>
+                    <li>Your First Strong point</li>
+                    <li>Your Second Strong point</li>
+                    <li>Your Third Strong point</li>
+                </ul>
+            </div>
+            <div class="personimg">
+
+                <img src="buildingimageperson.jpg" alt
+                    style="width: 250px; height: 300px;">
+
+                <div class="imagecap"><h3>Adam Blumand</h3>
+                    <h5><i class="fa-solid fa-phone"></i> 1-800 239-5678</h5>
+                    <button>Schedule The Call</button>
+                </div>
+            </div>
+        </div>
+        <div class="greenish">
+            <div class="firstpoint">
+                <i class="fa-regular fa-building" style="font-size: 40px;"></i>
+                <h1>900</h1>
+                <h4>Strong point</h4>
+            </div>
+            <div class="secondpoint">
+                <i class="fa-solid fa-chart-pie" style="font-size: 40px;"></i>
+                <h1>2000</h1>
+                <h4>Strong point</h4>
+            </div>
+            <div class="thirdpoint">
+                <i class="fa-solid fa-signal" style="font-size: 40px;"></i>
+                <h1>50%</h1>
+                <h4>Strong point</h4>
+            </div>
+            <div class="fourthpoint">
+                <i class="fa-solid fa-sack-dollar" style="font-size: 40px;"></i>
+                <h1>1,586</h1>
+                <h4>Strong point</h4>
+            </div>
+        </div>
+        <div class="strength">
+            <h1>Strengths of Our Company</h1>
+            <!-- <hr style="width: 200px;"> -->
+            <div class="hello">
+                <div class="horiline"
+                    style="width: 200px; height: 1px; background-color: black;"></div>
+                <i class="fa-solid fa-diamond"></i><i
+                    class="fa-solid fa-diamond"></i>
+                <div class="horiline"
+                    style="width: 200px; height: 1px; background-color: black;"></div>
+            </div>
+            <p>Rhetorical question to reinforce your headline</p>
+        </div>
+        <div class="proposition">
+            <div class="propic">
+
+                <h4><i class="fa-regular fa-clock"
+                        style="font-size: 30px; padding: 20px 0 0 20px; color: aliceblue;"></i>
+                    Your Value
+                    Propostion</h4>
+                <p>Add a descriptive of your offer <br>and jey benefits. How it
+                    helps<br> your customer.</p>
+
+            </div>
+            <div class="propicsec">
+
+                <h4><i class="fa-regular fa-clock"
+                        style="font-size: 30px; padding: 20px 0 0 20px; color: aliceblue;"></i>
+                    Your Value
+                    Propostion</h4>
+                <p>Add a descriptive of your offer <br>and jey benefits. How it
+                    helps<br> your customer.</p>
+
+            </div>
+            <div class="propic">
+
+                <h4><i class="fa-regular fa-clock"
+                        style="font-size: 30px; padding: 20px 0 0 20px; color: aliceblue;"></i>
+                    Your Value
+                    Propostion</h4>
+                <p>Add a descriptive of your offer <br>and jey benefits. How it
+                    helps<br> your customer.</p>
+
+            </div>
+        </div>
+        <div class="maintarget">
+            <div class="target">
+                <img src="buildingimage2.jpg" alt>
+            </div>
+            <div class="sectarget">
+                <h4>Clear Value For Your Target <br> Customer</h4>
+                <p>Add a descriptive of your offer and key benefits. <br>What it
+                    is and how it helps your customer</p>
+                <div class="lineprice">
+                    <div class="vertiline"
+                        style="width: 2px; height: 70px;background-color: darkgreen;"></div>
+                    <div class="price">
+                        <h2>$ 1,150,000</h2>
+                        <p>The best prices for your business</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="customer">
+            <h1 id="heading">Convincing Slogan</h1>
+            <h1>Encourage Your Customer</h1>
+            <button>Convincing CTA</button>
+        </div>
+        <div class="strength">
+            <h1>Strengths of Our Company</h1>
+            <!-- <hr style="width: 200px;"> -->
+            <div class="hello">
+                <div class="horiline"
+                    style="width: 200px; height: 0.5px; background-color: black;"></div>
+                <i class="fa-solid fa-diamond"></i><i
+                    class="fa-solid fa-diamond"></i>
+                <div class="horiline"
+                    style="width: 200px; height: 0.5px; background-color: black;"></div>
+            </div>
+            <p>Rhetorical question to reinforce your headline</p>
+        </div>
+        <div class="builddetails">
+            <div class="buildingpic">
+                <img src="buildpic1.jpg" alt>
+                <h4>Mauris Vitae Posuere</h4>
+                <p>A few words about your Product /Offer,<br>Focus on the
+                    benefits
+                    not the features. <br>Explain how your product will improve
+                    <br>
+                    your customer's life</p>
+                <div class="square">
+                    <div>
+                        <h3>250 m <sup>3</sup></h3>
+                    </div>
+                    <div
+                        style="width: 2px; height:50px; background-color: dimgray; margin-top: 10px;">
+                    </div>
+                    <div>
+                        <h3>$65,000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="buildingpic">
+                <img src="buildpic1.jpg" alt>
+                <h4>Peter Cooper Village</h4>
+                <p>A few words about your Product /Offer,<br>Focus on the
+                    benefits
+                    not the features. <br>Explain how your product will improve
+                    <br>
+                    your customer's life</p>
+                <div class="square">
+                    <div>
+                        <h3>1.150 m <sup>2</sup></h3>
+                    </div>
+                    <div
+                        style="width: 2px; height:50px; background-color: dimgray; margin-top: 10px;">
+                    </div>
+                    <div>
+                        <h3>$250,000</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="buildingpic">
+                <img src="buildpic1.jpg" alt>
+                <h4>Nunc Sapien Village</h4>
+                <p>A few words about your Product /Offer,<br>Focus on the
+                    benefits
+                    not the features. <br>Explain how your product will improve
+                    <br>
+                    your customer's life</p>
+                <div class="square">
+                    <div>
+                        <h3>120 m <sup>2</sup></h3>
+                    </div>
+                    <div
+                        style="width: 2px; height:50px; background-color: dimgray; margin-top: 10px;">
+                    </div>
+                    <div>
+                        <h3>$35,500</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin: 50px 0 0 120px;">What They Say About Us</h2>
+        <div class="about">
+            <div class="jerry">
+                <img src="buildimagepersonabout.jpg" alt>
+                <h3>Jerry Mack</h3>
+                <p>Real Estate Agent</p>
+                <p>A few sentences about your product. <br>How it help to solve
+                    clients problems. <br>It should convince the unconvinced.
+                    <br>No fake quotes or photos!</p>
+            </div>
+            <div class="jerrycenter">
+                <img src="buildimagepersonabout.jpg" alt>
+                <h3>Jerry Mack</h3>
+                <p>Real Estate Agent</p>
+                <p>A few sentences about your product. <br>How it help to solve
+                    clients problems. <br>It should convince the unconvinced.
+                    <br>No fake quotes or photos!</p>
+            </div>
+            <div class="jerry">
+                <img src="buildimagepersonabout.jpg" alt>
+                <h3>Jerry Mack</h3>
+                <p>Real Estate Agent</p>
+                <p>A few sentences about your product. <br>How it help to solve
+                    clients problems. <br>It should convince the unconvinced.
+                    <br>No fake quotes or photos!</p>
+            </div>
+        </div>
+       <div class="future">
+           <h1 id="futurehead">Get Started</h1>
+           <h1>Build Your Future Today</h1>
+           <button>Convincing CTA</button>
+       </div>
+    </body>
+</html>
